@@ -1,16 +1,16 @@
 function reverse(str = '') {
     let out = ''
 
-    for (let i = 0; i < str.length; i++) {
-        out = str[i] + out
+    for (let a = 0; a < str.length; a++) {
+        out = str[a] + out
     }
 
     return out
 }
 
 function palindrome(str = '') {
-    let inverse = reverse(str)
-    return inverse == str
+    let inverseNum = reverse(str)
+    return inverseNum == str
 }
 
 const readline = require('readline').createInterface({

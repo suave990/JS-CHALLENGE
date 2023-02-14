@@ -9,19 +9,19 @@ let array = [
     "Patrick wyne, 40"
 ]
 
-function toObject(arr = []) {
-    let obj = {}
+function ObjFormat(arr = []) {
+    let nestedObj = {}
     for (let i = 0; i < arr.length; i++) {
         let [names, age] = arr[i].split(', ')
         let [fname, lname] = names.split(' ')
 
 
-        obj[fname] = {
+        nestedObj[fname] = {
             secondName: lname,
             age: age
         }
     }
-    console.log(obj)
+    console.log(nestedObj)
 }
 
-toObject(array)
+ObjFormat(array)

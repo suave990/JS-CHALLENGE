@@ -1,18 +1,18 @@
-let arr = []
+let array = []
 
-arr = [1, 2, 3, 2, 4, 6, 4, 5, 2, 2, 1, 4, 6, 7, 4, 6, 7, 5, 3, 2]
+array = [1, 2, 3, 2, 4, 6, 4, 5, 2, 2, 1, 4, 6, 7, 4, 6, 7, 5, 3, 2]
 
 let output = []
 
-for (let i = 0; i < arr.length; i++) {
+for (let a= 0; a< arr.length; a++) {
     let divisible = false
-    for (let j = 2; j < (arr[i] / 2) + 1; j++) {
-        if (arr[i] % j == 0) {
+    for (let b = 2; j < (arr[a] / 2) + 1; b++) {
+        if (arr[a] % b == 0) {
             divisible = true
         }
     }
     if (!divisible) {
-        output.push(arr[i])
+        output.push(arr[a])
     }
 }
 
